@@ -38,4 +38,4 @@ Multiple Linear Regression
 Quick notes
 Removing outliers can increase r2; however, the outliers are interesting data points themselves. They signify which houses were under/oversold and could be potential opportunies for buying and selling homes.
 
-
+  
