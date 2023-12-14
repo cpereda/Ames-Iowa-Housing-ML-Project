@@ -11,5 +11,14 @@ Background
 Data set covers property sale between 2006 and 2010. Exclusing PID and SalePrice, the dataset contains 79 original features.
 Demographically, Ames comprosise of students, professors and their families. The largest employer is Iowa State Univerity.
 
+Data Cleaning
+
+Housing and real estate files were merged on PID and GeoRefNo to obtain lon and lat
+
+NaN handled
+  - Categorical filled with "missing"
+  - Numeric filled with mean/mode/median
+
+Feature engineering
 
 Linear models used including multiple linear and lasso regression
