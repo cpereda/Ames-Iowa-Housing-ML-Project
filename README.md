@@ -23,3 +23,12 @@ Feature engineering
   - features created include "TotalSF", "DistanceToISU", "DistanceCategory", "Season"
 
 Linear models used including multiple linear and lasso regression
+
+Lasso
+1. All features needed to be in int or float type before modeling. Nominal features were dummified with first column KEPT. Lasso can handle multicollinearity. Ordinal features were mapped based on ranking (missing=0)
+2. Standard Scaler applied ensures features are equally contributing to computation
+3. K-fold cross-validation used to improve model performance
+
+Multiple Linear Regression
+1. Standard scaler was not applied so the coefficients could be more interpretable
+2. Dummified categorical features - first columns were dropped
