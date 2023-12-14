@@ -20,5 +20,6 @@ NaN handled
   - Numeric filled with mean/mode/median
 
 Feature engineering
+  - features created include "TotalSF", "DistanceToISU", "DistanceCategory", "Season"
 
 Linear models used including multiple linear and lasso regression
