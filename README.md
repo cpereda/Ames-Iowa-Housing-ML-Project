@@ -28,7 +28,12 @@ Lasso
 1. All features needed to be in int or float type before modeling. Nominal features were dummified with first column KEPT. Lasso can handle multicollinearity. Ordinal features were mapped based on ranking (missing=0)
 2. Standard Scaler applied ensures features are equally contributing to computation
 3. K-fold cross-validation used to improve model performance
+4. GridSearch used to determine best alpha, a regularization term to reduce/shrink features to 0 if they do not contribute much to the model
 
 Multiple Linear Regression
 1. Standard scaler was not applied so the coefficients could be more interpretable
-2. Dummified categorical features - first columns were dropped
+2. Dummified categorical features - first columns were dropped. The first column increases multicollinearity
+3. Lasso was used to select important features, then fed into the lienar model
+
+Quick notes
+Removing outliers can increase r2; however, the outliers are interesting data points themselves. They signify which houses were under/oversold and could be potential opportunies for house flippers.
